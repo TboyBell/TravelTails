@@ -1,3 +1,21 @@
+/* For initially hidden objects */
+
+/* For slick nav menu */
+#nav_toggle {
+  display: none;
+} 
+
+/* For Mobile logo*/
+#mobile_logo {
+  display: none;
+}
+
+
+/* General Styling */
+body {
+  width: 100%;
+}
+
 /* Styling for Header & Footer (Nav, Logo, Links) */ 
 #heading_container { 
   display : flex; 
@@ -7,12 +25,7 @@
   width: 100%; 
   height: 50%; 
   background: url(Images/header_banner.jpg) no-repeat center center/cover; 
-}
-
-/* For slick nav menu */
-#nav_toggle {
-  display: none;
-}           
+}          
 
 #header_logo { 
   cursor: pointer; 
@@ -238,16 +251,15 @@
   #nav_container li {
     width: 90%;
     margin-left: 4%;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border: none;
   }
 
   #nav_container li:first-child {
-    border-top: 2px solid black;
+    border: none;
   }
 
   #nav_container li:last-child {
-    border-bottom: 2px solid black;
+    border: none;
   }
 
   #nav_container li:hover {
@@ -287,20 +299,34 @@
 
 /* Mobile Phones */
 @media screen and (max-width: 430px) {
-  
+
+  body {
+    min-width: 320px;
+  }
+
   /* Header styling */
   #heading_container {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
     padding: 0;
-    background: url(Images/mobile_logo.png) no-repeat center ;
+    margin: 0;
+    padding-bottom: 10px;
+    background: url();
+    
   }
 
   #header_logo {
     display: none;
   }
 
-  #header_logo figcaption {
-    display: none;
+  #mobile_logo {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;    
   }
   
   #nav_toggle {
@@ -309,13 +335,14 @@
     justify-content: center;
     align-items: center;
     
-    position: relative;
-    top: 40%;
-    left: 40%;
-    width: 15%;
-    height: 16%;
+    width: 100%;
+    max-width: 320px;
+    height: 80px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    
     background-color: #232323;
-    border-radius: 20px;
     border: none;
     cursor: pointer;
     z-index: 1000;
