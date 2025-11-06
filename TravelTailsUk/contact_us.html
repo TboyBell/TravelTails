@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Page Title -->
+		<title>Contact Us | TravelTails - Tales Forever</title>
+
+		<!-- Meta properties -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="keywords" content="travel, adventure, trips, tourism, TravelTails, vacation, travel agency, book trips">
+		<meta name="description" content="Get in touch with TravelTails. Contact us for inquiries, support, or to start planning your next adventure.">
+		<meta name="author" content="Oluwatomi-Bell">
+		
+		<!-- Link to Global font and Icon -->
+		
+		<!-- Brought to you by Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+
+
+		
+		<!-- Brought to you by Font Awesome : https://cdnjs.com/libraries/font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		
+		<!-- Stylesheet -->
+		<link rel='stylesheet' href='main.css'>
+		
+    </head>
+
+	<body>
+
+		<header id='heading_container'>
+
+            <!--  Navigation & Logo -->
+            <figure id='header_logo'>
+				<a href='index.html' aria-label="Return to homepage">
+					<img src="Images/logo.jpg" alt="TravelTails Company Logo">
+					<figcaption><b>TravelTails - Tales Forever</b></figcaption>
+				</a>
+			</figure>
+
+			<button id="slick_nav_menu" aria-label="Open mobile navigation menu" title="Menu"> <i class="fas fa-bars"></i> </button>
+			
+            <nav id='nav_container'>
+                <li> <a href='index.html'> Homepage </a> </li>
+				<li> <a href='about_us.html'> About Us </a> </li>
+				<li class='current_page'> <a href='contact_us.html'> Contact Us </a> </li>
+				<li> <a href='events_promotions.html'> Events & Promotions </a> </li>
+				<li> <a href='book_a_trip.html'> Book a Trip </a> </li>
+            </nav>
+            
+        </header>
+		
+		
+		<main id="mainpage_contact_main" role="main" aria-labelledby="mainpage_contact_heading">
+			<section id="mainpage_contact_intro">
+			    <h2 id="mainpage_contact_heading">Contact TravelTails UK</h2>
+			    <p>
+			      We’d love to hear from you! Whether you have questions about our pet-friendly stays,
+			      need help with a booking, or just want to share your travel experience — we’re here to help.
+			    </p>
+			</section>
+			
+			<section id="mainpage_contact_methods" aria-labelledby="mainpage_contact_methods_heading">
+				
+			    <h3 id="mainpage_contact_methods_heading" class="visually-hidden">Ways to Reach Us</h3>
+			
+			    <div id="mainpage_contact_cards">
+				    <article class="mainpage_contact_card" aria-label="Email contact">
+				        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+				        <h4>Email</h4>
+				        <p><a href="mailto:TravelTails@gmail.com">TravelTails@gmail.com</a></p>
+				    </article>
+				
+				    <article class="mainpage_contact_card" aria-label="Phone contact">
+				        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+				        <h4>Phone</h4>
+				        <p><a href="tel:+447510226517">07510 226 517</a></p>
+				    </article>
+				
+				    <article class="mainpage_contact_card" aria-label="Office location">
+				        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+				        <h4>Office</h4>
+				        <address> 123 Pet Lane,<br> London, UK </address>
+				    </article>
+				</div>
+				
+			</section>
+			
+			<section id="mainpage_contact_form_section" aria-labelledby="mainpage_form_heading">
+			    <h3 id="mainpage_form_heading">Send Us a Message</h3>
+			    <p>Fields marked with <span aria-hidden="true">*</span> are required.</p>
+
+			    <form id="mainpage_contact_form" method="post" action="#" novalidate>
+				    <div class="mainpage_form_group">
+				        <label for="mainpage_user_name">Full Name <span aria-hidden="true">*</span></label>
+				        <input type="text" id="mainpage_user_name" name="mainpage_user_name" required aria-required="true">
+				    </div>
+			
+				    <div class="mainpage_form_group">
+				        <label for="mainpage_user_email">Email Address <span aria-hidden="true">*</span></label>
+				        <input type="email" id="mainpage_user_email" name="mainpage_user_email" required aria-required="true">
+				    </div>
+			
+				    <div class="mainpage_form_group">
+				        <label for="mainpage_user_subject">Subject <span aria-hidden="true">*</span></label>
+				        <input type="text" id="mainpage_user_subject" name="mainpage_user_subject" required aria-required="true">
+				    </div>
+			
+				    <div class="mainpage_form_group">
+				        <label for="mainpage_user_message">Message <span aria-hidden="true">*</span></label>
+				        <textarea id="mainpage_user_message" name="mainpage_user_message" rows="6" required aria-required="true"></textarea>
+				    </div>
+			
+				    <button type="submit" id="mainpage_submit_btn" aria-label="Send message to TravelTails team">
+				        Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+				    </button>
+			    </form>
+			</section>
+		</main>
+
+
+		
+		<footer id='footer_container'>
+
+			<aside id='footer_resources'>
+			    <h3>Additional Resources</h3>
+			    <ul>
+			        <li><a href='https://www.petsabroaduk.co.uk/pet-travel-preparation/'>Pet Travel Tips</a></li>
+			        <li><a href='https://www.vets-now.com/find-an-emergency-vet/birmingham/'>Emergency Vet Finder</a></li>
+			        <li><a href='https://assets.publishing.service.gov.uk/media/5fe4a632e90e071204fcc308/pets-form-pt45.pdf'>Packing Checklist for Pets</a></li>
+			        <li><a href='https://www.google.com/maps/search/Pet+Friendly'>Pet-Friendly Restaurants</a></li>
+			        <li><a href='https://www.gov.uk/guidance/foreign-travel-insurance'>Travel Insurance Info</a></li>
+			        <li><a href='https://www.rspca.org.uk/adviceandwelfare/pets'>Pet Safety Guidelines</a></li>
+			    </ul>
+			</aside>
+
+            <nav id='footer_article'>
+				<li> <a href='index.html'> Homepage </a> </li>
+				<li> <a href='about_us.html'> About Us </a> </li>
+				<li> <a href='contact_us.html'> Contact Us </a> </li>
+				<li> <a href='events_promotions.html'> Events & Promotions </a> </li>
+				<li> <a href='book_a_trip.html'> Book a Trip </a> </li>
+            </nav>
+
+                
+            <figure id='footer_logo'>
+
+                <img src="Images/logo.jpg" alt="Company Logo">
+                <figcaption>
+                    <p>&copy; 2025 Oluwatomi-Bell. All rights reserved.</p>
+                    <p>Created in connection with academic work at St George’s, University of London.</p>
+                    <p>TravelTails - Tales Forever</p>
+                </figcaption>
+                
+            </figure>
+                
+        </footer>
+		
+		<script src='script.js'></script>
+	</body>
+</html>
