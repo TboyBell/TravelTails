@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Page Title -->
+		<title>Book a Trip | TravelTails - Tales Forever</title>
+
+		<!-- Meta properties -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="keywords" content="travel, adventure, trips, tourism, TravelTails, vacation, travel agency, book trips">
+		<meta name="description" content="Book your dream trip with TravelTails. Browse destinations, customize your itinerary, and start your adventure today.">
+		<meta name="author" content="Oluwatomi-Bell">
+		
+		<!-- Link to Global font and Icon -->
+		
+		<!-- Brought to you by Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+
+
+		
+		<!-- Brought to you by Font Awesome : https://cdnjs.com/libraries/font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		
+		<!-- Stylesheet -->
+		<link rel='stylesheet' href='main.css'>
+		
+    </head>
+
+	<body>
+
+		<header id='heading_container'>
+
+            <!--  Navigation & Logo -->
+            <figure id='header_logo'>
+				<a href='index.html' aria-label="Return to homepage">
+					<img src="Images/logo.jpg" alt="TravelTails Company Logo">
+					<figcaption><b>TravelTails - Tales Forever</b></figcaption>
+				</a>
+			</figure>
+
+			<button id="slick_nav_menu" aria-label="Open mobile navigation menu" title="Menu"> <i class="fas fa-bars"></i> </button>
+            
+            <nav id='nav_container'>
+
+                <li> <a href='index.html'> Homepage </a> </li>
+                <li> <a href='about_us.html'> About Us </a> </li>
+                <li> <a href='contact_us.html'> Contact Us </a> </li>
+                <li> <a href='events_promotions.html'> Events & Promotions </a> </li>
+                <li class='current_page'> <a href='book_a_trip.html'> Book a Trip </a> </li>
+                
+            </nav>
+            
+        </header>
+
+		<main>
+
+			<section id="popular_section">
+				<h3 class="h3_font">Popular Destinations</h3>
+    
+			    <ul class="destination_list">
+			        <li><b>Lake District</b> – Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			        <li><b>Scottish Highlands</b> – Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+			        <li><b>Dorset Coast</b> – Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+			    </ul>
+			</section>
+
+			
+			<section id="book_trip_section">
+				<h2 class="h2_font">Book a Trip</h2>
+				<p class="trip_intro">
+				    Ready for your next adventure? ✈️ Tell us your destination and a few details, and we’ll help you plan the perfect pet-friendly getaway!
+				</p>
+	
+				<form id="trip_form">
+					
+				    <div class="form_group">
+					      <label for="name">Full Name</label>
+					      <input type="text" id="name" placeholder="Your name" required>
+				    </div>
+				
+				    <div class="form_group">
+					      <label for="email">Email Address</label>
+					      <input type="email" id="email" placeholder="you@example.com" required>
+				    </div>
+				
+				    <div class="form_group">
+					      <label for="destination">Destination</label>
+					      <input type="text" id="destination" placeholder="Where would you like to go?" required>
+				    </div>
+				
+				    <div class="form_group">
+					      <label for="dates">Travel Dates</label>
+					      <input type="text" id="dates" placeholder="e.g. 15th–20th December 2025">
+				    </div>
+				
+				    <div class="form_group">
+					      <label for="pets">Number of Pets</label>
+					      <input type="number" id="pets" min="0" max="10" placeholder="e.g. 2">
+				    </div>
+				
+				    <div class="form_group full_width">
+					      <label for="notes">Additional Notes</label>
+					      <textarea id="notes" rows="4" placeholder="Tell us about your pets or special requests..."></textarea>
+				    </div>
+				
+				    <button type="submit" id="book_trip_btn" aria-label="Submit trip request" title="Submit your trip request">
+						Submit Request <i class="fas fa-paw" aria-hidden="true"></i>
+					</button>
+				
+				    <p id="trip_message" class="hidden" role="alert"></p>
+					
+				</form>
+				
+			</section>
+		</main>
+		
+		<footer id='footer_container'>
+
+			<aside id='footer_resources'>
+			    <h3>Additional Resources</h3>
+			    <ul>
+			        <li><a href='https://www.petsabroaduk.co.uk/pet-travel-preparation/'>Pet Travel Tips</a></li>
+			        <li><a href='https://www.vets-now.com/find-an-emergency-vet/birmingham/'>Emergency Vet Finder</a></li>
+			        <li><a href='https://assets.publishing.service.gov.uk/media/5fe4a632e90e071204fcc308/pets-form-pt45.pdf'>Packing Checklist for Pets</a></li>
+			        <li><a href='https://www.google.com/maps/search/Pet+Friendly'>Pet-Friendly Restaurants</a></li>
+			        <li><a href='https://www.gov.uk/guidance/foreign-travel-insurance'>Travel Insurance Info</a></li>
+			        <li><a href='https://www.rspca.org.uk/adviceandwelfare/pets'>Pet Safety Guidelines</a></li>
+			    </ul>
+			</aside>
+
+            <nav id='footer_article'>
+				<li> <a href='index.html'> Homepage </a> </li>
+				<li> <a href='about_us.html'> About Us </a> </li>
+				<li> <a href='contact_us.html'> Contact Us </a> </li>
+				<li> <a href='events_promotions.html'> Events & Promotions </a> </li>
+				<li> <a href='book_a_trip.html'> Book a Trip </a> </li>
+            </nav>
+
+                
+            <figure id='footer_logo'>
+
+                <img src="Images/logo.jpg" alt="Company Logo">
+                <figcaption>
+                    <p>&copy; 2025 Oluwatomi-Bell. All rights reserved.</p>
+                    <p>Created in connection with academic work at St George’s, University of London.</p>
+                    <p>TravelTails - Tales Forever</p>
+                </figcaption>
+                
+            </figure>
+                
+        </footer>
+		
+		<script src='script.js'></script>
+	</body>
+	
+</html>
